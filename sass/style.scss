@@ -3,8 +3,60 @@
 
 
 .title {
+    position: absolute;
+    top: 10vh;
+    text-transform: uppercase;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
     color: $white;
+    letter-spacing: 4px;
+    padding-bottom: 60px;
+
 }
 
+.counter {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    &__number {
+        display: block;
+        width: 80px;
+        height: 80px;
+        background-color: $darkDesaturatedBlue;
+        color: $softRed;
+        font-weight: bold;
+        font-size: 2rem;
+        padding: 20px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 5px 5px $veryDarkMostlyBlack;
+    }
+
+}
+
+.sociales {
+    position: absolute;
+    bottom: 2rem;
+    display: flex;
+    z-index: 200;
+
+    div:not(:first-of-type) {
+        margin-left: 20px;
+    }
+
+    div a:hover {
+        filter: invert(56%) sepia(17%) saturate(6158%) hue-rotate(310deg) brightness(101%) contrast(97%);
+    }
+
+    
+}
