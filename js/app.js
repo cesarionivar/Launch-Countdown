@@ -36,5 +36,5 @@ const countdown = (nextDate) => {
 }
 
 
-countdown('May 1, 2021');
+countdown('2021-05-01');
 
